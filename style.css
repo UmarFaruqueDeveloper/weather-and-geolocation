@@ -1,0 +1,190 @@
+*{
+    margin: 0x;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+.navbar{
+    background-color:#9a0a41;
+}
+
+#coupon{
+    height:500px;
+    width: 720px;
+  
+    position: absolute;
+    z-index:10;
+    margin-left:28%;
+    margin-top: 10%;
+    opacity: 1;
+    background-image: url("https://i.ibb.co/d4T4G5d/coupon-offer.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+  
+  
+}
+ 
+#coupon button{
+    position: relative;
+     left:95%;
+      font-size: 35px;
+      background: transparent;
+      border: none;
+
+}
+
+#weather{
+    margin-top: 16px;
+    margin-left: 16px;
+    font-weight: 600;
+    color: white;
+    
+}
+ 
+ .remove{
+    display: none;
+ }
+ 
+  #degree {
+     background: transparent;
+     border: none;
+     font-size: 22px;
+ }
+
+
+.mydark{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+  
+.but{
+    border: none;
+    background: transparent;
+    color: white;
+    margin-bottom: 7px;
+    margin-left: 15px;
+    
+}
+ .header{
+    width: auto;
+ }
+
+body{
+    margin: auto;
+}
+body a {
+    text-decoration: none;
+}
+
+
+
+.login button{
+    margin-top: 13px;
+    float: right;
+    margin-left: 5rem;
+    background-color: white;
+    border: none;
+    height: 1.8rem;
+    width: 8rem;
+    position: absolute;
+    cursor: pointer;
+    color: rgb(59, 91, 247);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.imgresize{
+    height: 100px;
+    width: 100px;
+}
+
+
+.bank{
+    background-color: #ececec;
+    
+}
+
+.logo{
+    height: 30px;
+    width: 80px;
+    /* margin-left: 5%; */
+}
+a{
+    text-decoration: none;
+}
+
+.quickLinksCard{
+    float: left;
+}
+.img-resize{
+    height: 150px;
+    width: 150px;
+}
+.imgresize{
+    height: 200px;
+    width: 150px;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+.bank{
+    background-color: #ececec;
+    
+}
+.image{
+    width: 200px;
+    height: 200px;
+  
+  }
+.swiper{
+    width: 950px;
+  }
+  
+  
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 3px solid #fff; */
+  }
+  
+
+.image{
+    width: 200px;
+    height: 200px;
+  
+  }
+  h4{
+    color: #9a0a41;
+  }
+h2{
+    border-radius: 5%;
+    width: 20%;
+    background-color: gray;
+    margin-left: 42%;
+    color: brown;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.d-block{
+    width: 100%;
+}
+
+.collapse{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.card a:hover{
+    scale:(1.1);
+}
+.card-text span{
+    color: green;
+}
+.be-img{
+    height: 150px;
+}

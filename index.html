@@ -1,0 +1,519 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Tata CLiQ</title>
+    <link rel="icon" href="https://i.ibb.co/Jm6xhtM/Tata-Cliq-scarch.png"/>
+</head>
+
+<body class="" >
+    <div id="coupon">
+        <button  onclick="closecoupon()"> &times;</button>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="https://i.ibb.co/XYRpjxx/Tata-Cliq-logo-2.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class='home'>Home</i>
+              </a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Womenwear</a></li>
+                <li><a class="dropdown-item" href="#">Menwear</a></li>
+                <li><a class="dropdown-item" href="#">Footware</a></li>
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">Sony</a></li>
+                <li><a class="dropdown-item" href="#">JBL</a></li>
+                <li><a class="dropdown-item" href="#">Boat</a></li>
+                <li><a class="dropdown-item" href="#">Mi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <input class=" me-3" type="text" placeholder="Search Products,Brands & More">
+          <button class="btn btn-primary" type="button">Log in/Sing Up</button>
+        </form>
+        <div >
+          <button class="but" onclick="changemode()">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+          </div>
+          <span id="weather" class=""></span> <button id="degree" onclick="geolocation()">⛅</button>
+      </div>
+    </nav>
+	
+	<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+  </div>
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ibb.co/Xt2DTQp/Slider-5.jpg" alt="Slider  (1)" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/J2kPvv9/Slider-4.jpg" alt="Slider  (2)" class="d-block" >
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/T1PqnrP/Slider-3.jpg" alt="Slider  (3)" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/qxjp2KK/Slider-2.jpg" alt="Slider  (4)" class="d-block" >
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/26bGYCz/Slider-1.jpg" alt="Slider  (5)" class="d-block" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+  <div id="op" class="row container-fluid text-center mt-3">
+
+    <div class="col sm-2 ">
+      <a class="" href="#">
+        <img class="rounded-circle img-resize" src="https://i.ibb.co/2qkCkt9/The-Best-Phones-in-2022-updated-July.jpg" alt="Phones"> <h4>Smart Phones</h4> </a>
+      </div>
+    <div class="col sm-2 ">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize " src="https://i.ibb.co/mFQNY6v/men.jpg" alt="Menwear">
+        <h4>Menwear</h4></a>
+    </div>
+    
+    <div class="col sm-2 ">
+      <a class="text-center" href="#">
+        <img class="rounded-circle text-center img-resize"  src="https://i.ibb.co/dQdcb7b/women-clothes-in-wardrobe.jpg" alt="women wear"> <h4>Womenwear</h4> </a>
+      </div>
+    <div class="col sm-2">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize" src="https://i.ibb.co/fGMGnst/footwear.jpg" alt="footwear"> <h4>Footwear</h4> </a>
+    </div>
+    <div class="col sm-2">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize" src="https://i.ibb.co/jDPNvJ4/watch-og-image-202203-GEO-IN.jpg" alt="watch"> <h4> Watch</h4></a>
+    </div>
+    <div class="col sm-2">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize " src="https://i.ibb.co/M5MQXRT/fragrance-notesm.jpg" alt="fragrance"> <h4>Beauty</h4></a>
+    </div>
+    <div class="col sm-2">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize" src="https://i.ibb.co/980FZTC/Catlog-Girls-Kids-wear.jpg" alt="kids"> <h4>Kids wear </h4> </a>
+    </div>
+    <div class="col sm-2">
+      <a class="" href="#">
+        <img class="rounded-circle text-center img-resize" src="https://i.ibb.co/bvp9cFZ/house.jpg" alt="home"> <h4>Home</h4> </a>
+    </div>
+  </div>
+</div>
+<div class="row bank">
+  <div class="col-6 col-md-4">
+    <a href="#"> <img src="https://i.ibb.co/sPrzm0w/bank-3.jpg" alt="bank"></a>
+  </div>
+  <div class="col-6 col-md-4">
+    <a href="#"> <img src="https://i.ibb.co/kQw3xzW/bank-2.jpg" alt="bank2"></a>
+  </div>
+  <div class="col-6 col-md-4">
+    <a href="#">
+      <img src="https://i.ibb.co/4K8mMHX/bank-1.jpg" alt="bank3"> </a>
+  </div>
+</div>
+
+<div class="row container-fluid text-center mt-3">
+  <div>
+    <h3 class="m-2"> Best of Electronics </h3>
+  </div>
+  
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded be-img text-center " src="https://i.ibb.co/n0gbjph/lenovo-laptop-ideapad-3i-15in-hero.png" alt="Thin And Light Laptop">
+      <p class="card-text" ><strong> Thin And Light Laptop</strong> <br> <span
+        class="card-text" > Min. 50% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded be-img text-center " src="https://i.ibb.co/Trkq4kC/gaming-laptop.jpg" alt="Gaming Laptop">
+      <p class="card-text" ><strong> Thin And Light Laptop</strong> <br> <span
+        class="card-text" > Min. 50% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded be-img text-center " src="https://i.ibb.co/FKyN6DZ/monitor.jpg" alt="Best LED Monitor">
+      <p class="card-text"class="m-2" ><strong> Best LED Monitors</strong> <br> <span
+        class="card-text" > Min. 30% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded be-img text-center " src="https://i.ibb.co/MRpYFQn/Projector.jpg" alt="Projector">
+      <p class="card-text" ><strong> 4K Projectors</strong> <br> <span
+        class="card-text" > Min. 30% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded text-center be-img " src="https://i.ibb.co/ZSv4Ggp/printer.jpg" alt="printer">
+      <p class="card-text" ><strong> Printers</strong> <br> <span
+        class="card-text" > Min. 20% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded text-center be-img " src="https://i.ibb.co/8drftZz/ac.jpg" alt="AC">
+      <p class="card-text" ><strong> Air Conditioners</strong> <br> <span
+        class="card-text" > Min. 25% off</span>
+      </p>
+    </a>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded text-center be-img" src="https://i.ibb.co/pfGfbjY/ref.jpg" alt="Refre">
+      <p class="card-text" ><strong> Refrigerators</strong> <br> <span
+        class="card-text" > Min. 20% off</span>
+      </p>
+    </a>
+  </div>
+
+</div>
+
+<div class="row container-fluid text-center mt-3">
+  <div>
+    <h3 class="m-2"> Best Mobiles Deals</h3>
+  </div>
+  <div class="col sm-2">
+    <a class="text-center" href="#">
+      <img class="rounded text-center imgresize" src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/2022-spring-iphone13-colors.png" alt="iphone"><h4>iphone </h4> </a>
+  </div>
+  <div class="col sm-2 ">
+    <a class="" href="#">
+      <img class="rounded imgresize" src="https://images.indianexpress.com/2022/07/Nothing-phone-1-black-and-white.jpg" alt="Phones"> <h4>Nothing Phone</h4> </a>
+    </div>
+  <div class="col sm-2 ">
+    <a class="text-center" href="#">
+      <img class="rounded text-center imgresize"  src="https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-413037-sm-s908ezkgmea-530970280" alt="samsung"> <h4>samsung</h4> </a>
+    </div>
+  <div class="col sm-2">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize" src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/a57-en/middlebanner/A57-1600x1068-green.png.thumb.webp" alt="Oppo"> <h4>Oppo</h4> </a>
+  </div>
+  <div class="col sm-2">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize" src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL._SL1500_.jpg" alt="watch"> <h4> OnePluse</h4></a>
+  </div>
+  <div class="col sm-2">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize " src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1600777517734/1b37e4809bbcccd933b87b92bcf2c97f.png" alt="Vivo"> <h4>Vivo</h4></a>
+  </div>
+  <div class="col sm-2">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize" src="https://m.media-amazon.com/images/I/81gRC3KTeaL._AC_SS450_.jpg" alt="Realme"> <h4>Realme </h4> </a>
+  </div>
+  <div class="col sm-2">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize" src="https://images.firstpost.com/wp-content/uploads/2021/03/micromax-in-1-1280.jpg" alt="Micromax"> <h4>Micromax</h4> </a>
+  </div>
+  <div class="col sm-2 ">
+    <a class="" href="#">
+      <img class="rounded text-center imgresize " src="https://images.ctfassets.net/wcfotm6rrl7u/2sDJE99xaUTEDxrkiopmtK/be3cba35562ec25a738ac957d93d7964/april_8th_launch-og_image.jpg?w=1200" alt="Nokia">
+      <h4>Nokia</h4>
+  </div>
+</div>
+  <hr>
+
+  <div class="row container-fluid text-center mt-3">
+    <div>
+      <h3 class="m-2"> New ON CLiQ </h3>
+    </div>
+    
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/dDfKHh1/New-ON-CLi-Q-10.jpg" alt="New-ON-CLi-Q-10"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/MZkRX4b/New-ON-CLi-Q-9.jpg" alt="New-ON-CLi-Q-9"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/qDtKZgg/New-ON-CLi-Q-3.jpg" alt="New-ON-CLi-Q-3"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/X4pchFW/New-ON-CLi-Q-7.jpg" alt="New-ON-CLi-Q-7"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/FYqrV2S/New-ON-CLi-Q-6.jpg" alt="New-ON-CLi-Q-6"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/dJYGHhC/New-ON-CLi-Q-2.jpg" alt="New-ON-CLi-Q-2"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/SnDS5kZ/New-ON-CLi-Q-1.jpg" alt="New-ON-CLi-Q-1"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/RDJH1Yx/New-ON-CLi-Q-5.jpg" alt="New-ON-CLi-Q-5"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/ysMJTV6/New-ON-CLi-Q-4.jpg" alt="New-ON-CLi-Q-4"></a>
+    </div>
+    <div class="col  sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center imgresize" src="https://i.ibb.co/zRkR4rK/New-ON-CLi-Q-11.jpg" alt="New-ON-CLi-Q-11"></a>
+    </div>
+  </div>
+
+  <div class="row container-fluid text-center mt-3">
+    <div>
+      <h3 class="m-2"> ALL ABOUT SHOES </h3>
+    </div>
+    
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/JQfR34Z/shoes-8.jpg" alt="Shoes Pic"></a>
+    </div>
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/KDmDgxQ/shoes-7.jpg" alt="Shoes Pic"></a>
+    </div>
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/WfLQRpR/shoes-6.jpg" alt="Shoes Pic"></a>
+    </div>
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/HYJGt1Y/shoes-1.jpg" alt="Shoes Pic"></a>
+    </div>
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/VV8Pk4J/shoes-2.jpg" alt="Shoes Pic"></a>
+    </div>
+    <div class="col sm-2">
+      <a class="text-center" href="#">
+        <img class="rounded text-center " src="https://i.ibb.co/LhpR5pv/shoes-3.jpg" alt="Shoes Pic"></a>
+    </div>
+
+  </div>
+	  <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Tata MarketPlace
+          </h6>
+          <p>
+            Shop from a wide range of fashion & lifestyle products from top brands at the best prices only on Tata CLiQ. Buy Footwear, Apparel, Accessories, Jewellery,.....
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Customer Service
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Shoping</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Offers</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Payments</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Returns & Refunds</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Return to Store</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Electromic return policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Payments</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Reviews </a>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            My Tata CLiQ
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">About Us
+              </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Careers
+              </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sell With Us
+              </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Terms of Use
+              Privacy Policy
+              </a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Tata CLiQ Offerings
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> RAIGANJ,U/D, WB 733123, IN</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            uf00786@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +91 9775478802</p>
+          <p><i class="fas fa-print me-3"></i> +91 7001033674</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    &COPY; 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">www.tatacliq.com</a>
+    Created By: Umar Faruque &hearts;
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+<script src="script.js"></script>
+<script>
+    window.onload=loadcoupon();
+</script>
+
+</html>
